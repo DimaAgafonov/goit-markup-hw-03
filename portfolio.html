@@ -1,210 +1,226 @@
-:root {
-  --main-font-family: "Roboto", sans-serif;
-  --second-font-family: "Raleway", sans-serif;
-  --main-txt-color: #212121;
-  --grey-txt-color: #757575;
-  --white-txt-color: #ffffff;
-  --dark-background-color: #2f303a;
-  --hover-color: #2196f3;
-}
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Pierwszy projekt strony" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Festive&family=Qahiri&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Rubik:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Studio</title>
+	</head>
 
-body {
-  font-family: var(--main-font-family);
-  color: var(--main-txt-color);
-}
-button {
-  font-family: inherit;
-}
-/*  COMPONENTS  */
-.navigation-list-item-link.active {
-  color: var(--hover-color);
-}
-a {
-  text-decoration: none;
-}
+	<body>
+		<header class="header">
+			<div class="container">
+				<a class="logo-link" href="index.html"
+					>Web<span class="logo-dark">Studio</span></a
+				>
 
-/*   HEADER  */
-.logo-link {
-  font-family: var(--second-font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+				<nav class="navigation">
+					<ul class="navigation-list list">
+						<li class="navigation-list-item">
+							<a class="navigation-list-item-link" href="index.html">Agencja</a>
+						</li>
+						<li class="navigation-list-item">
+							<a class="navigation-list-item-link active" href="portfolio.html"
+								>Portfolio</a
+							>
+						</li>
+						<li class="navigation-list-item">
+							<a class="navigation-list-item-link" href="#">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
 
-  letter-spacing: 0.03em;
-  color: var(--hover-color);
-}
+				<a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+				<a href="tel:+48111111111" class="phone-number">+48 111 111 111</a>
+			</div>
+		</header>
 
-.logo-dark {
-  color: #000000;
-}
+		<main>
+			<section class="section">
+				<div class="container">
+					<ul class="filters-list list">
+						<li class="filters-list-item">
+							<button class="filter-btn" type="button">Wszystkie</button>
+						</li>
+						<li class="filters-list-item">
+							<button class="filter-btn" type="button">Strony</button>
+						</li>
+						<li class="filters-list-item">
+							<button class="filter-btn" type="button">Aplikacje</button>
+						</li>
+						<li class="filters-list-item">
+							<button class="filter-btn" type="button">Dizajn</button>
+						</li>
+						<li class="filters-list-item">
+							<button class="filter-btn" type="button">Marketing</button>
+						</li>
+					</ul>
 
-.navigation-list-item-link,
-.email,
-.phone-number {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-}
-
-.navigation-list-item-link {
-  color: var(--main-txt-color);
-}
-
-.email,
-.phone-number {
-  color: var(--grey-txt-color);
-}
-
-.navigation-list-item-link:hover,
-.navigation-list-item-link:focus,
-.email:hover,
-.email:focus,
-.phone-number:hover,
-.phone-number:focus {
-  color: var(--hover-color);
-}
-
-.main-header-container {
-  background-color: var(--dark-background-color);
-}
-
-.main-header {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-txt-color);
-}
-
-.primary-btn {
-  background-color: var(--hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-txt-color);
-}
-
-.primary-btn:hover {
-  cursor: pointer;
-}
-
-/*  NASZE ATUTY / OUR ATRIBUTES  */
-
-.atributes-list-item-header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.atributes-list-item-text {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--grey-txt-color);
-}
-
-/*  CZYM SIĘ ZAJMUJEMY / WHAT WE DO  */
-
-.second-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-/*  NASZ ZESPÓŁ / OUR TEAM  */
-
-.our-team {
-  background-color: #f5f4fa;
-}
-
-.our-team-list-employee {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 0.842;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.our-team-list-occupation {
-  font-size: 16px;
-  line-height: 1.187;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--grey-txt-color);
-}
-
-/*  FOOTER  */
-
-.footer {
-  background-color: var(--dark-background-color);
-}
-.address-list-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.address-list-link:hover,
-.address-list-link:focus {
-  color: var(--hover-color);
-}
-
-.logo-light {
-  color: var(--white-txt-color);
-}
-
-.street {
-  color: var(--white-txt-color);
-}
-
-/*  PORTFOLIO  */
-
-.filter-btn {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  display: flex;
-  align-items: center;
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-  cursor: pointer;
-  color: var(--white-txt-color);
-  background-color: var(--hover-color);
-}
-
-.projects-list-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.projects-list-type {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: var(--grey-txt-color);
-}
-
+					<ul class="projects-list list">
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/laptopscreen.jpg"
+								alt="obrazek otwartego laptopa"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Technocrack</p>
+								<p class="projects-list-type">Strona internetowa</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/neworleangraphic.jpg"
+								alt="obrazek dwóch koszykarzy New Orlean i Golden Star"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">
+									Grafika New Orlean vs Golden Star
+								</p>
+								<p class="projects-list-type">Dizajn</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/seefoodlogo.jpg"
+								alt="logo restauracji Seafood"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Restauracja Seafood</p>
+								<p class="projects-list-type">Aplikacja</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/headphones.jpg"
+								alt="obrazek słuchawek"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Projekt Prime</p>
+								<p class="projects-list-type">Marketing</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/twoboxes.jpg"
+								alt="obrazek z dwoma pudełkami"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Projekt Boxes</p>
+								<p class="projects-list-type">Aplikacja</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/screen.jpg"
+								alt="obrazek monitora"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Inspiration has no Borders</p>
+								<p class="projects-list-type">Strona internetowa</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/magazine.jpg"
+								alt="obrazek z otwartym magazynem"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Magazyn Limited Edition</p>
+								<p class="projects-list-type">Dizajn</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/labeltag.jpg"
+								alt="obrazek z metką"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Projekt LAB</p>
+								<p class="projects-list-type">Marketing</p>
+							</div>
+						</li>
+						<li class="projects-list-item">
+							<img
+								class="projects-list-img"
+								src="images/images_portfolio/openedlaptop.jpg"
+								alt="obrazek otwartego laptopa"
+								width="370"
+								height="294"
+							/>
+							<div class="projects-list-border">
+								<p class="projects-list-title">Growing Business</p>
+								<p class="projects-list-type">Aplikacja</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<div class="footer-background">
+			<footer class="footer">
+				<div class="container">
+					<a class="logo-link" href="index.html"
+						>Web<span class="logo-light">Studio</span></a
+					>
+					<address class="address">
+						<ul class="address-list list">
+							<li class="address-list-item">
+								<a
+									class="address-list-link street"
+									href="https://goo.gl/maps/AZBb3oWcoWajxazx5"
+									target="_blank"
+									>m. Warszawa, Aleje Jerozolimskie 21</a
+								>
+							</li>
+							<li class="address-list-item">
+								<a class="address-list-link" href="mailto:info@devstudio.com"
+									>info@devstudio.com</a
+								>
+							</li>
+							<li class="address-list-item">
+								<a class="address-list-link" href="tel:+48111111111"
+									>+48 111 111 111</a
+								>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
