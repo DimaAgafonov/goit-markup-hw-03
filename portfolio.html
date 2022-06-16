@@ -19,36 +19,48 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
-        <a class="logo-link" href="index.html"
-          >Web<span class="logo-dark">Studio</span></a
-        >
+    <div class="container">
+      <header class="header">
+        <div class="header-nav">
+          <a class="logo-link" href="index.html"
+            >Web<span class="logo-dark">Studio</span></a
+          >
+          <nav class="navigation">
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-item-link" href="index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-item-link active" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-item-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Sekcja HERO -->
+          <a class="email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a href="tel:48111111111" class="phone-number">+48 111 111 111</a>
+        </div>
 
-        <nav class="navigation">
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="index.html">Agencja</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link active" href="portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-item-link" href="#">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-
-        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+48111111111" class="phone-number">+48 111 111 111</a>
-      </div>
-    </header>
-
-    <main>
-      <section class="section">
-        <div class="container">
+        <main>
+          <section>
+            <div class="main-header-container">
+              <h1 class="main-header">
+                EFEKTYWNE ROZWIĄZANIE DLA WASZEGO BIZNESU
+              </h1>
+              <button class="primary-btn" type="button">Zamów usługę</button>
+            </div>
+          </section>
+      </header>
+      <main>
+        <section class="section">
           <ul class="filters-list list">
             <li class="filters-list-item">
               <button class="filter-btn" type="button">Wszystkie</button>
@@ -188,12 +200,10 @@
               </div>
             </li>
           </ul>
-        </div>
-      </section>
-    </main>
-    <div class="footer-background">
-      <footer class="footer">
-        <div class="container">
+        </section>
+      </main>
+      <div class="footer-background">
+        <footer class="footer">
           <a class="logo-link" href="index.html"
             >Web<span class="logo-light">Studio</span></a
           >
@@ -219,8 +229,8 @@
               </li>
             </ul>
           </address>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
